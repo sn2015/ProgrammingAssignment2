@@ -1,5 +1,6 @@
-## These functions create for a given matrix "x" a special object (a list) with 
-## 4 functions which set, store and return the matrix itself and invers matrix
+## These functions can prevent time consuming calculations 
+## caching invers matrix for a given matrix and return solution
+## from the memory when needed 
 ## Check if invers matrix for the given matrix already exists
 ## return solution if it was earlier calculeted, 
 ## calculate solution and store it if matrix "x" is first time here 
@@ -22,9 +23,9 @@ makeCacheMatrix <- function(x = matrix()) {
              getsolve=getsolve)
 }
 
-## "s" is an invers matrix for "x" 
 ## This funtion checks if invers matrix for the given matrix already exists in 
 ## previouse function 
+## "s" is an invers matrix for "x"
 ## returns solution if it was earlier calculeted, 
 ## calculate solution if this matrix is first time here 
 
